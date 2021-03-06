@@ -1,13 +1,19 @@
 import React from 'react';
 import { IconButton} from '@material-ui/core';
-import { BetSlipContainer, CloseButtonContainer } from './styles';
 import { Close } from '@material-ui/icons';
+import { useSelector } from 'react-redux';
+import { BetSlipContainer, CloseButtonContainer } from './styles';
+
+import { BetType, selectBetSlips } from '../../redux/BetSlipSlice';
+import { BetSlipCard } from '../BetSlipCard';
 
 type BetSlipDrawerProps = {
   onClose: () => void,
 };
 
 export const BetSlipDrawer = ({ onClose }: BetSlipDrawerProps) => {
+  const bets: BetType[] = useSelector(selectBetSlips);
+
   return (
     <BetSlipContainer>
       <CloseButtonContainer>
@@ -15,6 +21,9 @@ export const BetSlipDrawer = ({ onClose }: BetSlipDrawerProps) => {
           <Close fontSize="large"/>
         </IconButton>
       </CloseButtonContainer>
+      {bets?.length > 0 && bets.map((bet) => (
+        <BetSlipCard key={bet.selectionId} bet={bet} />
+      ))}
     </BetSlipContainer>
   );
 }
