@@ -3,13 +3,13 @@ import { AppThunk, RootState } from '../../app/store';
 import { ResponseType } from '../../app/ResponseTypes';
 import axios from 'axios';
 
-type EventState = {
+export type EventState = {
   isLoading: boolean,
   response: ResponseType,
   error: string,
 }
 
-const initialState: EventState = {
+export const initialState: EventState = {
   isLoading: false,
   response: [],
   error: ''

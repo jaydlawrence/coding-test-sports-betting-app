@@ -11,11 +11,11 @@ export interface BetType {
   selectionPrice: number;
 }
 
-type BetSlipState = {
+export type BetSlipState = {
   bets: BetType[],
 }
 
-const initialState: BetSlipState = {
+export const initialState: BetSlipState = {
   bets: [],
 };
 
