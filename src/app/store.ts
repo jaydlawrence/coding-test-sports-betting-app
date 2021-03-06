@@ -1,9 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import eventReducer from '../redux/EventSlice';
+import betSlipReducer from '../redux/BetSlipSlice';
+
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    events: eventReducer,
+    betSlips: betSlipReducer,
   },
 });
 
