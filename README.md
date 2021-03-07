@@ -2,6 +2,7 @@
 
 ![Demo recording](https://github.com/jaydlawrence/coding-test-sports-betting-app/blob/master/public/demo.gif?raw=true)
 
+The idea of the challenge was not necessarily to make the most beautiful UI ever, but more to add the functionality specified and build the interface according to the wire-frame mock-ups.
 
 ## Run locally
 
@@ -48,7 +49,7 @@ The brief suggested using the following:
 ### Mock Screens
 
 The brief showed 4 phone mockup screens that had the same layout as my solution.
-The mocks where box outlines on white background.
+The mock-ups where basic wire-frame layouts of the components.
 
 ### Functionality
 
