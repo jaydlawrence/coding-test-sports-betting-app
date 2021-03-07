@@ -51,4 +51,16 @@ export const selectEventResponse = (state: RootState) => {
   return state.events.response;
 }
 
+export type selectEventLoadingAndErrorsReturnType = {
+  isLoading: boolean,
+  error: string,
+}
+
+export const selectEventLoadingAndErrors = (state: RootState): selectEventLoadingAndErrorsReturnType => {  
+  return {
+    isLoading: state.events.isLoading,
+    error: state.events.error,
+  };
+}
+
 export default eventSlice.reducer;

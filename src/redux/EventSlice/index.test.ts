@@ -1,5 +1,15 @@
 import reducer, { EventState, initialState, startLoading, setError, setEventState } from './index';
 
+const messyInitialState = {
+  isLoading: true,
+  response: [{
+    id: 'test',
+    name: 'testName',
+    markets: [],
+  }],
+  error: 'testError',
+}
+
 describe('betSlip reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {type: null})).toEqual(initialState)
@@ -7,7 +17,10 @@ describe('betSlip reducer', () => {
 
   it('should handle startLoading', () => {
     expect(
-      reducer(initialState, startLoading())
+      reducer({
+        ...messyInitialState,
+        isLoading: false
+      }, startLoading())
     ).toEqual({
       ...initialState,
       isLoading: true,
@@ -16,9 +29,10 @@ describe('betSlip reducer', () => {
 
   it('should handle setError', () => {
     expect(
-      reducer(initialState, setError('error here'))
+      reducer(messyInitialState, setError('error here'))
     ).toEqual({
-      ...initialState,
+      ...messyInitialState,
+      isLoading: false,
       error: 'error here',
     });
   });
@@ -26,7 +40,7 @@ describe('betSlip reducer', () => {
   it('should handle setEventState', () => {
     const testResponseData = [{id: 'id', name: 'name', markets: []}]
     expect(
-      reducer(initialState, setEventState(testResponseData))
+      reducer(messyInitialState, setEventState(testResponseData))
     ).toEqual({
       ...initialState,
       response: testResponseData,

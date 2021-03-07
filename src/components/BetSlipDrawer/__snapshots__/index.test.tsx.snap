@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BetSlipCard should display 1`] = `
+<div
+  className="sc-bdfBwQ jzXECQ"
+>
+  <div
+    className="sc-gsTCUz bOGElV"
+  >
+    <button
+      aria-label="menu"
+      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeEnd"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[MockFunction]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    className="sc-dlfnbm iblaNK"
+  >
+    <div
+      className="MuiPaper-root MuiCard-root sc-hKgILt jheBDq MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root sc-eCssSg iazobD"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Real Madrid - Team to Win
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root sc-jSgupP fLRxBJ"
+      >
+        <h6
+          className="MuiTypography-root sc-gKsewC hvNfcU MuiTypography-h6"
+        >
+          1.23
+        </h6>
+        <button
+          aria-label="delete"
+          className="MuiButtonBase-root MuiIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeLarge"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

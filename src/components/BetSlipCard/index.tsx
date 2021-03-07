@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Button, Card, CardContent, IconButton, Typography} from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import { HighlightOff } from '@material-ui/icons';
 import { BetType } from '../../redux/BetSlipSlice';
 import { CardContainer, Content, CustomCard, Header, Price } from './styles';

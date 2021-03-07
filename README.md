@@ -1,8 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Run locally
 
-## Available Scripts
+### `yarn`
 
-In the project directory, you can run:
+Install all the dependencies for this project
 
 ### `yarn start`
 
@@ -14,31 +14,69 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run tests
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Brief / Instructions
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Without sharing the entire brief document for this challenge, here is a summary:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Data
 
-### `yarn eject`
+The brief described the data relationship.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+It provided a the relationship as described in `src/app/ResponseTypes.ts`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It also provided a mock endpoint to fetch the data from:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+http://www.mocky.io/v2/59f08692310000b4130e9f71
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Suggested Technology
 
-## Learn More
+The brief suggested using the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React
+- Redux
+- create-react-app (suggested way to set up the above)
+- Static type checking (TypeScript or Flow)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Mock Screens
+
+The brief showed 4 phone mockup screens that had the same layout as my solution.
+The mocks where box outlines on white background.
+
+## Comments on implementation
+
+### Package choices
+
+#### TypeScript
+
+I haven't used TypeScript for a project before, I have only tinkered with it in the past.
+It was a risk throwing it in here as it could have gotten me stuck.
+But I do well when thrown in at the deep end and I made it work without too much of a slow-down due to TypeScript.
+But... Since this is my first TypeScript app, don't judge me too harshly on my possibly lack of best practices in TypeScript.
+I was heavily reliant on eslint and the compiler to guide me on TypeScript usage.
+
+#### Axios
+
+For HTTP requests, I have used axios for a few small projects and it is quick to set up and use, so I grabbed it quickly to get the job done.
+
+#### Material-ui
+
+The brief suggested using Material-ui and I have used it before and it has a large selection of easy to use components, so the choice made sense.
+
+#### Redux
+
+The brief said to use Redux, so I did.
+I had used it before, but the new redux-tools package and the Slice functionality was new to me.
+
+#### Styled Components
+
+I have used a few different styling methodologies and I keep coming back to Styled Components unless a project already has a well-established pattern already.
+Styled Components are very flexible, keep the CSS as CSS but convert it to a component to keep things in JavaScript as much as possible.
+It just seems like a good pattern.
+
+
+### Design Decisions
+
+This part is more difficult to document as almost everything I did was a design decision, so I will leave this part open to follow-up questions instead.
