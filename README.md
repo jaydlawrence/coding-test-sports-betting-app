@@ -1,3 +1,8 @@
+# Coding Challenge - Sport Betting App
+
+![Demo recording](https://github.com/jaydlawrence/coding-test-sports-betting-app/blob/master/public/demo.gif?raw=true)
+
+
 ## Run locally
 
 ### `yarn`
@@ -44,6 +49,17 @@ The brief suggested using the following:
 
 The brief showed 4 phone mockup screens that had the same layout as my solution.
 The mocks where box outlines on white background.
+
+### Functionality
+
+- Display the fetched Events that have at least one market
+- When a selection is clicked
+  - Make that selection green
+  - Add selection to the BetSlip view
+  - When clicked again, remove and turn white
+- When "delete" is clicked on BetSlip view
+  - remove the selection
+  - make the main view version turn back to white
 
 ## Comments on implementation
 
