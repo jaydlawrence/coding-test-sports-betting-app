@@ -45,8 +45,8 @@ export const betSlipSlice = createSlice({
 
 export const { AddRemoveBet, RemoveBet } = betSlipSlice.actions;
 
-export const selectBetSlipSelectionIds = (state: RootState) => state.betSlips.bets.map( bet => bet.selectionId);
+export const selectBetSlipSelectionIds = (state: RootState): string[] => state.betSlips.bets.map( bet => bet.selectionId);
 
-export const selectBetSlips = (state: RootState) => state.betSlips.bets;
+export const selectBetSlips = (state: RootState): BetType[] => state.betSlips.bets;
 
 export default betSlipSlice.reducer;

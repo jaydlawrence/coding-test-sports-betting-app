@@ -11,7 +11,7 @@ type BetSlipDrawerProps = {
   onClose: () => void,
 };
 
-export const BetSlipDrawer = ({ onClose }: BetSlipDrawerProps) => {
+export const BetSlipDrawer: React.FunctionComponent<BetSlipDrawerProps> = ({ onClose }: BetSlipDrawerProps) => {
   const bets: BetType[] = useSelector(selectBetSlips);
 
   return (

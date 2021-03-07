@@ -19,7 +19,7 @@ type EventCardProps = {
   event: EventType,
 }
 
-export const EventCard = ({ event }: EventCardProps) => {
+export const EventCard: React.FunctionComponent<EventCardProps> = ({ event }: EventCardProps) => {
   const selectedIds = useSelector(selectBetSlipSelectionIds);
   const dispatch = useDispatch();
   return (

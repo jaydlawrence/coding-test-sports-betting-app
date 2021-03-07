@@ -47,7 +47,7 @@ export const getEventsAsync = (): AppThunk => async dispatch => {
   }
 };
 
-export const selectEventResponse = (state: RootState) => {  
+export const selectEventResponse = (state: RootState): ResponseType => {  
   return state.events.response;
 }
 

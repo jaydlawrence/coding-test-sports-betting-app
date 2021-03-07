@@ -10,7 +10,7 @@ type BetSlipCardProps = {
   bet: BetType,
 };
 
-export const BetSlipCard = ({ bet }: BetSlipCardProps) => {
+export const BetSlipCard: React.FunctionComponent<BetSlipCardProps> = ({ bet }: BetSlipCardProps) => {
   const dispatch = useDispatch();
   return (
     <CardContainer>

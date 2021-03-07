@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Toolbar, Drawer } from '@material-ui/core';
 
 export const Bar = styled(Toolbar)`

@@ -7,7 +7,7 @@ import { EventCard } from './components/EventCard';
 import { Nav } from './components/Nav';
 import { getEventsAsync, selectEventResponse, selectEventLoadingAndErrors } from './redux/EventSlice'
 
-function App() {
+const App: React.FunctionComponent = () =>  {
   const responseData: ResponseType = useSelector(selectEventResponse);
   const {
     isLoading,

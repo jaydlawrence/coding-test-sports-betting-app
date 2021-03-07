@@ -5,7 +5,7 @@ import { BetSlipDrawer } from '../BetSlipDrawer';
 import { Bar, CustomDrawer } from './styles';
 
 
-export const Nav = () => {
+export const Nav: React.FunctionComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen)
   return (
